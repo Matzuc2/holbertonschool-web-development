@@ -1,84 +1,375 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
-body{
+
+body {
     background-color: black;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
     width: 1440px;
-    position: relative;
+    margin: 0 auto;
 }
 
+html {
+    width: auto;
+}
 
-
-a{
+a {
     text-decoration: none;
     display: inline-block;
     color: white;
 }
 
-header{
-    width: fit-content;
-    height: 29px;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 171px 0;
+    height: 70px;
 }
 
-#logo{
-    position: absolute;
-    left: 171.59px;
-    top: 35.02px;
-    width: fit-content;
+
+#logo img {
     height: 35px;
-    display: inline-block;
+    width: auto;
 }
 
-
-#Repertories{
-    position: absolute;
-    width: fit-content;
-    height: 15px;
-    left: 1041px;
-    word-spacing: 53px;
+#Repertories {
+    display: flex;
+    gap: 53px;
     font-size: 10px;
-    font-family: 'Source Sans Pro', Bold;
-    top: 37px;
+    font-weight: 700;
+    height: 15px;
+}
+
+#Sec {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
 }
 
 #GetSchooled {
-    width: fit-content;
-    position: absolute;
-    top: 220px;
-    left: 377px;
     font-size: 120px;
     line-height: 151px;
-    transform: translateY(-60%);
-    height: 151px;
-    overflow: hidden;
+    margin-bottom: 0px;
+    margin-top: 10px;
 }
 
-#SmilesGrinLaugh{
-    height: 20px;
-    position: absolute;
-    left: 593px;
-    top: 361px;
+#SmilesGrinLaugh {
     word-spacing: 60px;
     line-height: 20px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 0;
+    font-weight: Bold;
+}
+#ProBlock{
+    margin-top: 150px;
 }
 
-#Pros{
+#Sec button {
+    background-color: #C271FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', Semibold;
+    border-radius: 30px;
+    height: 44px;
+    width: 162px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#Pros {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+#Learn{
+    color: #C271FF;
+    font-weight: bold;
+}
+
+#LearnFromPros{
+    font-weight: 300;
+    font-size: 32px;
+}
+
+#hero{
+    background-image: url(./img/header/background\ \(1\).png);
+    background-repeat: no-repeat;
+    width: 1440px;
+}
+
+#testimonials{
+    background-image: url(./img/background\ \(2\).png);
+    height: 392px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#testimonials img{
+    width: auto;
+    height: 160px;
+}
+
+#TestimonialsBlock{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    gap: 50px;
+}
+
+#TestimonialsBlock p{
+    margin: 0;
+    padding: 0;
+    line-height: 33.6px;
+    font-size: 22px;
+
+}
+
+#Citation blockquote{
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    width: 730px;
+}
+
+#Tutorials{
+    background-color: white;
+    color: black;
+    height: 610px;
+}
+
+#MostPopular{
+    margin-top: 0px;
+    padding-top:70px ;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: lighter;
+    gap: 10px;
+    padding-bottom: 50px;
+}
+
+#popular{
+    color: #C271FF;
+    font-weight: bold;
+}
+
+#TutoBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    gap: 30px;
+}
+
+#TutoBlock p{
+    font-size: 14px;
+    color: #071629;
+}
+
+
+#TutoBlock h2{
+    font-size: 16px;
+}
+
+#Membership{
+    background-image: url(./img/background\ \(3\).png);
+    height: 502px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 55px;
+}
+#Membership h1{
+    width: auto;
+    height: 40px;
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+#Membership p{
+    line-height: 26px;
+}
+
+#Free{
+    font-weight: 700;
+    color: #C271FF;
+}
+
+#MemberShipBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 90px;
+    height: 153px;
+    width: 257px;
+}
+
+
+#RegisterButton{
+    width: 162px;
+    height: 44px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-color: #C271FF;
+    color: white;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', Semibold;
+    border-radius: 30px;
+    height: 44px;
+    width: 162px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#MemberShipBlock p{
+    width: 212px;
+}
+
+#FAQ{
+    background-color: white;
+    height: 1000px;
+    color: #071629;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#FAQ h1{
+    margin-bottom: 80px;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+
+
+.SmileBlock div:nth-child(4) {
     display: flex;
     flex-direction: row;
-    position: absolute;
-    width: 1009px;
-    height: 237px;
-    left: 217px;
-    top: 758px;
-    gap: 20px; /* Espacement entre les éléments */
-}
-
-.pro{
-    display: flex;
-    flex-direction: column; /* Changé de row à column pour mettre le texte en dessous */
     align-items: center;
-    width: 100%;
-    height: 237px;
-    text-align: center; /* Centre le texte */
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 300 !important;
+    color: #C271FF;
 }
 
+.SmileBlock div:nth-child(5) {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    font-size: 14px;
+    font-weight: 300 !important;
+    color: #C271FF;
+    margin-top: 5px;
+}
+
+.SmileBlock div:nth-child(5) img{
+    margin-right: 10px;
+}
+
+.SmileBlock div:nth-child(5) p{
+    margin-top: 0px;
+    color:#C271FF !important;
+    font-weight: 600;
+}
+
+.SmileBlock div:nth-child(5) img:last-of-type{
+    margin-right: 85px;
+}
+
+.SmileBlock div:nth-child(4) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 300 !important;
+    color: #C271FF;
+}
+
+.SmileBlock div:nth-child(4) h3 {
+    font-weight: 600 !important;
+    font-size: 14px;
+}
+
+.pro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.pro img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.pro h3 {
+    margin: 5px 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.pro p {
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.Phillip{
+    height: 30px;
+    width: 30px;
+}
+
+.SmileBlock {
+    position: relative;
+}
+
+.SmileBlock > img:first-child {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.SmileBlock:nth-child(1)::before,
+.SmileBlock:nth-child(2)::before,
+.SmileBlock:nth-child(3)::before,
+.SmileBlock:nth-child(4)::before {
+    content: '';
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    background-image: url('./img/play.png');
+}
+
+.MemberChild{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px
+}
+
+.MemberChild p{
+    margin-top: 0;
+}
